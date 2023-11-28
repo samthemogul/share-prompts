@@ -6,13 +6,14 @@ import Provider from '@components/Provider';
 
 export const metadata = {
     title : "Prompt Book",
-    description : "Discover and share AI Prompts"
+    description : "Discover & share AI Prompts"
 }
 
 const Rootlayout = ({ children }) => {
   return (
-    <html>
+    <html lang='en'>
         <body>
+            <Provider>
             <div className="main">
                 <div className="gradient" />
             </div>
@@ -20,6 +21,7 @@ const Rootlayout = ({ children }) => {
                 <Nav/>
                 {children}
             </main>
+            </Provider>
         </body>
     </html>
   )
